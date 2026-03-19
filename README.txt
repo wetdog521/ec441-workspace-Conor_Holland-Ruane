@@ -13,8 +13,14 @@ Usage Description: For this week's artifact, I used Gemini to generate a propose
 
 WEEK 3:
 
-Tools Used:** Google Gemini
+Tools Used: Google Gemini
 
-Usage Description:** I used Gemini to synthesize the Lecture 8 Ethernet notes into a proposed problem set. I specifically directed the AI to generate questions that bridge network theory with hardware and physical layer constraints (such as line coding, interrupt handling on NICs, and duplex mismatch diagnostics). After generation, I verified the AI's solutions against the lecture notes, particularly confirming the logic behind the ARP broadcast/unicast asymmetry and the CSMA/CD mechanics causing late collisions.
+Usage Description: I used Gemini to synthesize the Lecture 8 Ethernet notes into a proposed problem set. I specifically directed the AI to generate questions that bridge network theory with hardware and physical layer constraints (such as line coding, interrupt handling on NICs, and duplex mismatch diagnostics). After generation, I verified the AI's solutions against the lecture notes, particularly confirming the logic behind the ARP broadcast/unicast asymmetry and the CSMA/CD mechanics causing late collisions.
+
+Week 4:
+
+
+Tools Used: Google Gemini
+Usage Description: I used Gemini to generate an 8-question problem set covering the material from Lecture 14. I asked the AI to focus on practical calculations, like finding usable host ranges, performing subnet membership checks with binary AND logic, and assigning VLSM blocks based on host requirements. After it generated the problems, I double-checked the CIDR math and Python `ipaddress` module syntax against the class slides to verify it was correct.
 
 
