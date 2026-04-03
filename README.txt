@@ -48,4 +48,22 @@ You need Python installed on your computer. This script uses a couple of externa
 
 A window will pop up showing the network graph. Close the window to let the script continue running the routing math and printing the analysis to your terminal.
 
+Week 7:
+
+
+Tools Used: Google Gemini
+Usage Description: I prompted Gemini to refine the simulation script from earlier. I requested that the `\n` terminal bugs be fixed and that visual network graphs be added to every test case using `networkx` and `matplotlib`. I also enforced specific language constraints to ensure the terminal output reads more naturally and explains the core concepts (like why NAT breaks end-to-end communication and how traceroute abuses TTL logic) in simple, direct terms.
+
+How to Run This Lab
+
+You need Python installed, along with two graphing libraries.
+
+1. Open your terminal.
+2. Install the visual libraries:
+   `pip install networkx matplotlib`
+3. Run the script:
+   `python week07-protocol-lab.py`
+
+The script is interactive. It will pop up a window showing a diagram (like a Traceroute path or a DHCP exchange). Close the window to let the script print the step-by-step analysis to your terminal, then press Enter to move to the next topic.
+
 
