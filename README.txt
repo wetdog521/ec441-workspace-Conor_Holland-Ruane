@@ -66,4 +66,8 @@ You need Python installed, along with two graphing libraries.
 
 The script is interactive. It will pop up a window showing a diagram (like a Traceroute path or a DHCP exchange). Close the window to let the script print the step-by-step analysis to your terminal, then press Enter to move to the next topic.
 
+Week 8:
+
+Tools Used: Google Gemini
+Usage Description: I expanded my previous iperf3 guide into a formal Performance Analysis Report. I gave the AI a strict prompt requiring a high level of technical detail, specifically asking it to integrate math and bash code blocks directly into the explanations. The AI generated the Mathis Throughput Formula derivation to prove throughput collapse on high-BDP networks. It also generated the specific Linux tc and sysctl commands needed to replicate the theories in a lab environment. I enforced rigid language constraints so the report reads cleanly and directly, avoiding all marketing fluff.
 
