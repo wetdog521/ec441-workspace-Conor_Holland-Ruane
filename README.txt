@@ -71,3 +71,9 @@ Week 8:
 Tools Used: Google Gemini
 Usage Description: I expanded my previous iperf3 guide into a formal Performance Analysis Report. I gave the AI a strict prompt requiring a high level of technical detail, specifically asking it to integrate math and bash code blocks directly into the explanations. The AI generated the Mathis Throughput Formula derivation to prove throughput collapse on high-BDP networks. It also generated the specific Linux tc and sysctl commands needed to replicate the theories in a lab environment. I enforced rigid language constraints so the report reads cleanly and directly, avoiding all marketing fluff.
 
+
+Week 9
+
+Tools Used:** Google Gemini
+Usage Description:** Gemini generated a 15-question Gradescope-style quiz based on the Lecture 21 notes covering CLI tools, Wireshark, and pyshark. A strict prompt required a mix of multiple-choice and open-ended questions. The prompt also required concise, detailed solutions for every question. The output maps directly to the specific use cases of ping, traceroute, ss, and tcpdump outlined in the class materials.
+
