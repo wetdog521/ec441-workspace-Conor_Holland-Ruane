@@ -74,6 +74,21 @@ Usage Description: I expanded my previous iperf3 guide into a formal Performance
 
 Week 9
 
-Tools Used:** Google Gemini
-Usage Description:** Gemini generated a 15-question Gradescope-style quiz based on the Lecture 21 notes covering CLI tools, Wireshark, and pyshark. A strict prompt required a mix of multiple-choice and open-ended questions. The prompt also required concise, detailed solutions for every question. The output maps directly to the specific use cases of ping, traceroute, ss, and tcpdump outlined in the class materials.
+Tools Used: Google Gemini
+Usage Description: Gemini generated a 15-question Gradescope-style quiz based on the Lecture 21 notes covering CLI tools, Wireshark, and pyshark. A strict prompt required a mix of multiple-choice and open-ended questions. The prompt also required concise, detailed solutions for every question. The output maps directly to the specific use cases of ping, traceroute, ss, and tcpdump outlined in the class materials.
+
+
+Final Project
+
+Tools Used: Google Gemini, Wireshark, Python (pyshark, matplotlib)
+
+Usage Description: Over the final weeks of the course, I used Gemini as an interactive tutor and pair-programmer to scope, build, and refine my final Demo Day project.
+
+Project Scoping & Methodology: I initially queried the AI to evaluate several project prompts. After selecting the pyshark traffic analysis project, we established a robust methodology focused on the course's grading rubric (Depth, Clarity, and Craft). The AI guided me on how to cleanly capture Wireshark data, isolate application traffic, and simulate active web browsing. We significantly expanded the project's depth by establishing a comparative study: analyzing how applications behave on an enterprise network (Boston University's campus Wi-Fi) versus a residential home network.
+
+Script Development & Iteration: I used Gemini to iteratively develop Python scripts to parse my .pcap files offline. We started with a basic script to plot TCP vs. UDP packet sizes over time. As my understanding deepened, I prompted the AI to help me write more advanced analytical scripts. We developed custom parsers to calculate throughput over time (Mbps), measure UDP packet arrival variance (jitter), and track TCP sequence numbers to map exact network retransmissions (packet drops).
+
+Debugging & Optimization: During the development of the TCP sequence tracking script, I encountered a massive memory leak that caused my system to freeze. I used Gemini to diagnose the issue, learning that pyshark stores all packets in RAM by default. We implemented a fix using keep_packets=False and added a terminal progress counter to handle the massive packet volume of a 4K YouTube download safely.
+
+Data Analysis & Presentation Prep: Once I generated the comparative graphs, I used Gemini to help me interpret the raw data and translate it into a compelling narrative for my Demo Day pitch. We mapped the visual data back to core networking concepts, specifically linking UDP jitter to Layer 2 CSMA/CA interference, and TCP throughput dips to Layer 4 congestion control (Head-of-Line blocking). Finally, I used the AI to simulate a peer-review session, practicing my explanations for edge cases like enterprise firewalls utilizing a "default deny" rule for UDP traffic and forcing applications like Zoom to fall back to TCP.
 
