@@ -78,6 +78,20 @@ Tools Used: Google Gemini
 Usage Description: Gemini generated a 15-question Gradescope-style quiz based on the Lecture 21 notes covering CLI tools, Wireshark, and pyshark. A strict prompt required a mix of multiple-choice and open-ended questions. The prompt also required concise, detailed solutions for every question. The output maps directly to the specific use cases of ping, traceroute, ss, and tcpdump outlined in the class materials.
 
 
+Week 10
+
+Tools Used: Markdown, Mermaid.js, Google Gemini, VS Code
+
+Usage Description: For this technical report, I utilized Gemini to assist in structuring a rigorous analysis of the paradigm shift from kernel-space TCP to user-space QUIC over UDP. The report modeled the QUIC connection lifecycle and TLS 1.3 handshake strictly as a central state machine, utilizing Mermaid.js to diagram the 1-RTT transition sequence. Furthermore, I detailed the cryptographic primitives securing the transport, specifically AES-GCM for payload integrity and HKDF for key derivation. A major focal point was dissecting Ephemeral Elliptic Curve Diffie-Hellman (ECDHE) to explain how the mathematical separation of authentication and confidentiality guarantees forward secrecy. Finally, I contextualized these protocols against physical engineering constraints by exploring hypothetical deployments in low-power embedded hardware and lossy marine telemetry networks.
+
+Week 11
+
+Tools Used:** Python (Scapy), `tcpdump` / `tshark`, Wireshark, Google Gemini
+
+Usage Description:For this laboratory assignment, I utilized Gemini to assist in writing a Python script leveraging the Scapy library to manually forge Transport and Application layer packets, bypassing the standard operating system network stack. The script crafted a raw TCP SYN probe targeting `www.bu.edu` and a UDP DNS query for `www.ietf.org`. I utilized command-line packet capture tools to record the raw wire traffic to a `.pcap` file. During the Wireshark dissection phase, I successfully tracked the DNS resolution chain, specifically observing the "Recursion Desired" bit and the 300-second Time-to-Live (TTL) attribute in the answer records. Furthermore, I identified a critical transport-layer interaction: because Scapy bypasses the kernel to send the initial SYN, the OS network stack interprets the incoming SYN-ACK from the server as an unexpected segment and immediately transmits an RST packet to tear down the connection, perfectly demonstrating standard RFC 793 behavior.
+
+
+
 Final Project
 
 Tools Used: Google Gemini, Wireshark, Python (pyshark, matplotlib)
